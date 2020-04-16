@@ -1,0 +1,14 @@
+[
+  {
+    "id": "redeploy-proyecto-backend",
+    "execute-command": "$HOME_PROYECTO/webhooks/script.sh",
+    "command-working-directory": "$HOME_PROYECTO/",
+    "pass-arguments-to-command": [{ "source": "string", "name": "proyecto-backend proyecto-database etc" }]
+  },
+  {
+    "id": "redeploy-proyecto-frontend",
+    "execute-command": "$HOME_PROYECTO/webhooks/script.sh",
+    "command-working-directory": "$HOME_PROYECTO/",
+    "pass-arguments-to-command": [{ "source": "string", "name": "proyecto-frontend" }]
+  }
+]
